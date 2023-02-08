@@ -150,9 +150,6 @@ platform :ios do
     ])
     configure_bundle_id("RingerVolumeIntents", "com.#{TEAMID}.RingerVolume.RingerVolumeIntents", [
     ])
-    configure_bundle_id("VolumeManager", "com.#{TEAMID}.VolumeManager", [
-    ])
-    
   end
 
   desc "Provision Certificates"
@@ -172,8 +169,7 @@ platform :ios do
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
         "com.#{TEAMID}.RingerVolume",
-        "com.#{TEAMID}.RingerVolume.RingerVolumeIntents",
-        "com.#{TEAMID}.VolumeManager"
+        "com.#{TEAMID}.RingerVolume.RingerVolumeIntents"
       ]
     )
   end
