@@ -93,7 +93,6 @@ platform :ios do
 
     update_code_signing_settings(
       path: "#{GITHUB_WORKSPACE}/RingerVolume.xcodeproj",
-      profile_name: mapping["com.#{TEAMID}.VolumeManager"],
       code_sign_identity: "iPhone Distribution",
       targets: ["VolumeManager"]
     )
