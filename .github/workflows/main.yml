@@ -1,0 +1,10 @@
+name: Build RingerVolume
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-12
+    steps:
+              - name: iOS Build Action
+                uses: yukiarrr/ios-build-action@v1.11.2
